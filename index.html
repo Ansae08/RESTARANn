@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="./Css/style.css" />
+  </head>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap%27');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-image: url(../imges/1999.jpeg);
+    background-size: cover;
+    height: 400px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0,0,0,.7);
+}
+
+h1{
+    position: absolute;
+    font-family: 'Great Vibes';
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+    right: 630px;
+    font-size: 50px;
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+.name-inner {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 90px;
+}
+
+.n-name {
+    display: flex;
+    align-items: center;
+}
+
+#special {
+    color: rgb(228, 106, 7);
+    font-family: 'Great Vibes';
+    font-size: 30px;
+}
+
+#bruh {
+    color: rgb(66, 65, 65);
+    font-family: 'Great Vibes';
+    font-size: 30px;
+}
+
+#star {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+}
+
+.left {
+    border: solid 1px gray;
+    width: 150px;
+    height: 0;
+}
+
+.f-star {
+    display: flex;
+    align-items: center;
+}
+
+.s-star {
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-inner {
+    font-family: sans-serif;
+    margin: 90px 0;
+    text-align: center;
+}
+
+.main-item {
+    height: 450px;
+    border-radius: 20px;
+    padding: 100px 60px 0 60px;
+    background-image: url(../imges/1500.png);
+    background-size: cover;
+    margin: 0 30px 0 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.main-item img {
+    width: 400px;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.header-inner2 {
+    font-family: 'Playball', cursive;
+    margin-bottom: 70px;
+}
+.header-inner2 {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s1 {
+    width: 200px;
+    height: 1px;
+    background-color: rgb(53, 53, 53);
+}
+
+.header-item img {
+    width: 20px;
+    margin: 0 10px 0 10px;
+}
+
+.s2 {
+    width: 200px;
+    height: 1px;
+    background-color: rgb(53, 53, 53);
+}
+
+.header-item2 h2 {
+    font-size: 35px;
+    font-family: 'Playball', cursive;
+}
+
+.header-item2 h2 span {
+    transition: all 0.5s ease 0s;
+    color: #cc5302;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mini-text img {
+    width: 130px;
+}
+
+.menu-h5{
+    text-align: center;
+}
+
+
+
+.menu-item2 h5 {
+    color: #cc5302;
+}
+
+.menu-item2 h4 {
+    color: #cc5302;
+}
+
+.line {
+    border: 1px solid rgb(230, 230, 230);
+    margin: 20px 0;
+    height: 4px;
+    background-color: rgba(219, 219, 219, 0.52);
+}
+
+.menu-item1 {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-text h2{
+    color: rgb(124, 124, 124);
+    font-size: 17px;
+}
+
+.menu-text p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(168, 168, 168);
+}
+
+.menu-item1 img{
+    margin: 10px;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    padding-bottom: 1px;
+}
+
+
+.menu-item {
+    margin: 0 20px;
+    display: inline-block;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(165 165 165 / 52%);
+    background-color: rgb(255, 255, 255);
+    width: 25%;
+}
+
+.menu-item2 {
+    padding: 10px 20px;
+    border: 6px solid rgba(219, 219, 219, 0.52);
+    background-color: rgb(255, 255, 255);
+}
+
+/* menu2  */
+
+.menu2-inner {
+    display: flex;
+    justify-content: center;
+}
+
+.menu2-item {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.808);
+    margin: 15px;
+    display: inline-block;
+    background-color: rgb(47, 47, 47);
+    width: 250px;
+    font-family: sans-serif;
+}
+.menu2-item:hover {
+    background-color: rgb(88, 88, 88);
+    transition: all 0.3s ease 0s;
+}
+
+.menu2-img img {
+    width: 250px;
+}
+
+.menu2-text {
+    padding: 20px;
+}
+
+.menu2-text h2 {
+    color: rgb(214, 214, 214);
+    font-size: 18px;
+}
+
+.menu2-text p {
+    font-size: 15px;
+    color: rgb(177, 177, 177);
+}
+
+/* review */
+
+.review-inner {
+    margin: 0 auto;
+    width: 60%;
+    font-family: sans-serif;
+}
+
+.review-h1 {
+    text-align: center;
+}
+
+.review-h1 h1 {
+    color: rgb(68, 68, 68);
+    font-size: 20px;
+}
+
+.review-text img {
+    display: inline-block;
+    width: 50px;
+}
+.review-text2 img:hover {
+    box-shadow: 0 0 10px yellow;
+    border-radius: 50px;
+}
+
+.review-text p {
+    display: inline-block;
+    color: rgb(170, 170, 170);
+}
+
+.review-text2 {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.review-text2 h3 {
+    color: #cc5302;
+}
+
+.review-text2 img {
+    width: 15px;
+}
+
+/* coment  */
+
+.comment-inner {
+    width: 792px;
+    margin: 0 auto;
+}
+
+input {
+    margin: 0 10px 20px 10px;
+    width: 340px;
+    padding: 15px;
+}
+
+textarea {
+    padding: 10px;
+    margin: 10px;
+    width: 95%;
+    height: 170px;
+    font-size: 15px;
+}
+
+.btn {
+    width: 200px;
+    border: none;
+    padding: 10px;
+    color: rgb(189, 189, 189);
+    background-color: rgb(49, 49, 49);
+}
+
+.btn:hover {
+    
+    background-color: rgb(90, 90, 90);
+}
+
+
+.btn-top a img:hover{
+    transition: all 0.3s ease 0s;
+    box-shadow:0 0 10px green;
+    border-radius: 50px;
+}
+
+/* footer  */
+
+footer {
+    margin-top: 50px;
+    background-color: #cc5302;
+}
+
+.footer-inner {
+    text-align: center;
+    padding: 40px;
+}
+
+.footer-icon a {
+    opacity: 0.7;
+    margin-left: 10px;
+}
+
+.footer-icon a:hover {
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.footer-icon a img {
+    width: 35px;
+}
+
+.footer-text {
+    margin-top: 30px;
+}
+
+.footer-text h3 {
+    color: rgb(224, 224, 224);
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+.btn-top a img {
+    position: relative;
+    bottom: 60px;
+    width: 40px;
+}
+
+@media (max-width: 720px) {
+    body{
+        overflow-x: hidden;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    /* header  */
+    .header img {
+        width: 80px;
+    }
+
+    h1{
+        position: absolute;
+        font-family: 'Great Vibes';
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin: 0;
+        right: 50px;
+        font-size: 50px;
+        padding-left: 50px;
+        font-size: 30px;
+    }
+
+    .header h1 {
+        font-size: 40px;
+        color: white;
+        font-family: 'Playball', cursive;
+    }
+    .s1 {
+        width: 100px;
+        height: 1px;
+        background-color: rgb(53, 53, 53);
+    }
+    .s2 {
+        width: 100px;
+        height: 1px;
+        background-color: rgb(53, 53, 53);
+    }
+    .header-inner2 {
+        font-family: 'Playball', cursive;
+        margin-bottom: 70px;
+    }
+    /* main */
+    .main-inner {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    .main-item {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.301);
+        height: 300px;
+        padding: 20px;
+        margin-top: 20px;
+        width: 200px;
+        border-radius: 20px;
+        background-image: none;
+        background-color: rgb(246, 246, 246);
+        text-align: center;
+    }
+    .main-item img {
+        width: 200px;
+    }
+    .main-text h3 {
+        color: rgb(51, 51, 51);
+    }
+    .main-text p {
+        font-size: 14px;
+        color: rgb(173, 173, 173);
+    }
+    /* menu  */
+    .menu {
+        font-family: sans-serif;
+    }
+    .menu-inner {
+        display: block;
+    }
+    .menu-item {
+        margin: 0;
+        display: block;
+        padding: 0px;
+        box-shadow: 0 0 10px rgba(165, 165, 165, 0.52);
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+    }
+    .menu-item1 {
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-item2 {
+        padding: 10px 20px;
+        border: 6px solid rgba(219, 219, 219, 0.52);
+        background-color: rgb(255, 255, 255);
+    }
+    .menu-item2 h1 {
+        color: #cc5302;
+    }
+    .menu-item1 img {
+        margin: 10px;
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+    }
+    .menu-text h2 {
+        color: rgb(124, 124, 124);
+        font-size: 17px;
+    }
+    .menu-text p {
+        font-size: 16px;
+        font-weight: 400;
+        color: rgb(168, 168, 168);
+    }
+    .menu-h1 {
+        text-align: center;
+    }
+    .line {
+        border: 1px solid rgb(230, 230, 230);
+        margin: 20px 0;
+        height: 4px;
+        background-color: rgba(219, 219, 219, 0.52);
+    }
+    /* menu2  */
+    .menu2-inner {
+        display: block;
+    }
+    .menu2-item {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.808);
+        margin-bottom: 15px;
+        display: block;
+        background-color: rgb(47, 47, 47);
+        width: 300px;
+        font-family: sans-serif;
+        margin: 0 auto;
+    }
+    .menu2-img img {
+        width: 300px;
+    }
+    .menu2-text {
+        padding: 20px;
+    }
+    .menu2-text h2 {
+        color: rgb(214, 214, 214);
+        font-size: 18px;
+    }
+    .menu2-text p {
+        font-size: 15px;
+        color: rgb(177, 177, 177);
+    }
+    /* review */
+    .review-inner {
+        margin: 0 auto;
+        width: 80%;
+        font-family: sans-serif;
+    }
+    .review-h1 {
+        text-align: center;
+    }
+    .review-h1 h1 {
+        color: rgb(68, 68, 68);
+        font-size: 17px;
+    }
+    .review-text img {
+        display: inline-block;
+        width: 30px;
+    }
+    .review-text p {
+        display: inline-block;
+        color: rgb(170, 170, 170);
+    }
+    .review-text2 {
+        margin-top: 20px;
+        text-align: right;
+    }
+    .review-text2 h3 {
+        font-size: 16px;
+        color: #cc5302;
+    }
+    .review-text2 img {
+        width: 12px;
+    }
+
+    /* coment  */
+    .comment-inner {
+
+        width: 100%;
+        margin: 0 auto;
+    }
+    input {
+        display: block;
+        margin: 0 10px 20px 10px;
+        width: 270px;
+        padding: 15px;
+    }
+    textarea {
+        padding: 10px;
+        margin: 10px;
+        width: 282px;
+        height: 170px;
+        font-size: 15px;
+    }
+    .btn {
+        width: 302px;
+        border: none;
+        padding: 10px;
+        color: rgb(189, 189, 189);
+        background-color: rgb(49, 49, 49);
+    }
+    .btn:hover {
+        background-color: rgb(90, 90, 90);
+    }
+    /* footer  */
+    footer {
+        margin-top: 50px;
+        background-color: #cc5302;
+    }
+    .footer-inner {
+        text-align: center;
+        padding: 40px;
+    }
+    .footer-icon a {
+        opacity: 0.7;
+        margin-left: 10px;
+    }
+    .footer-icon a:hover {
+        opacity: 1;
+        margin-left: 10px;
+    }
+    .footer-icon a img {
+        width: 35px;
+    }
+    .footer-text {
+        margin-top: 30px;
+    }
+    .footer-text h3 {
+        color: rgb(224, 224, 224);
+        font-family: sans-serif;
+        font-size: 10px;
+    }
+    .btn-top a img {
+        position: relative;
+        bottom: 60px;
+        width: 40px;
+    }
+
+}
+  </style>
+  <body>
+    <header>
+      <section class="header">
+        <div class="cont">
+          <div class="mini-text">
+              <img src="./imges/sta2r.png" alt="">
+            <h1>Catering & SpecialEvents</h1>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="name-inner">
+          <div class="f-star">
+            <div class="left"></div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png"
+              alt=""
+              id="star"
+            />
+            <div class="left"></div>
+          </div>
+          <div class="n-name">
+            <h2 id="special">C</h2>
+            <h3 id="bruh">antarella's</h3>
+          </div>
+          <div class="s-star">
+            <div class="left"></div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png"
+              alt=""
+              id="star"
+            />
+            <div class="left"></div>
+          </div>
+        </div>
+      </section>
+      <section class="main">
+        <div class="container">
+            <div class="main-inner">
+                <div class="main-item">
+                    <img src="./imges/00.jpeg" alt="">
+                    <div class="main-text">
+                        <h3>Павел Сибиряков</h3>
+                        <p>Шеф повар 12-летним стажем, закончил обучение в Брюсселе, где и
+                            <br>
+                            работал после. Крупнейший специалист в области соусов и закусок. </p>
+                    </div>
+                </div>
+                <div class="main-item">
+                    <img src="./imges/3.jpeg" alt="">
+                    <div class="main-text">
+                        <h3>Султан Бекбосын</h3>
+                        <p>Шеф-повар с 18-летним стажем, специалист в приготовлении мяса.
+                            <br>
+                            Каждый четверг проводит презентацию нового блюда. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <div class="header-inner2">
+          <div class="header-text">
+              <div class="header-item">
+                  <div class="s1"></div>
+                      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png" alt="">
+                      <div class="s2"></div>
+              </div>
+            <div class="header-item2">
+                <h2>
+                    <h2 id="special">Menu</h2>
+                </h2>
+            </div>
+            <div class="header-item">
+                <div class="s1"></div>
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png" alt="">
+                <div class="s2"></div>
+            </div>
+          </div>
+      </div>
+       <!-- menu -->
+       <section class="menu">
+         <div class="container">
+            <div class="menu-inner">
+                <div class="menu-item">
+                    <div class="menu-item2">
+                        <div class="menu-h5">
+                            <h5>Закуски</h5>
+                        </div>
+                        <div class="line"></div>
+                        <div class="menu-item1"><img src="./imges/1.jpeg" alt=""></div>
+                        <div class="menu-text">
+                            <h2>Блюда к вину</h2>
+                            <p>
+                                Pepperoni, mozarella cheese and italian seasonings are
+                                rolled together, baked to delicious perfection, then cut
+                                into bite-sized delights. Your quests will beg for the
+                                recipe.
+                              </p>
+                        </div>
+                        <div class="menu-item1"><img src="./imges/2.jpeg" alt=""></div>
+                    <div class="menu-text">
+                        <h2>Суши</h2>
+                        <p>
+                            Pepperoni, mozarella cheese and italian seasonings are
+                            rolled together, baked to delicious perfection, then cut
+                            into bite-sized delights. Your quests will beg for the
+                            recipe.
+                          </p>
+                    </div>
+                    <div class="menu-item1"><img src="./imges/2.jpeg" alt=""></div>
+                    <div class="menu-text">
+                        <h2>Tell'aneppa</h2>
+                        <p>
+                            Pepperoni, mozarella cheese and italian seasonings are
+                            rolled together, baked to delicious perfection, then cut
+                            into bite-sized delights. Your quests will beg for the
+                            recipe.
+                          </p>
+                    </div>
+                    </div>
+                </div>
+                <!--2-->
+                <div class="menu-item">
+                    <div class="menu-item2">
+                        <div class="menu-h1">
+                            <h4>Главные Блюда</h4>
+                        </div>
+                        <div class="line"></div>
+                        <div class="menu-item1"><img src="./imges/4.jpeg" alt=""></div>
+                        <div class="menu-text">
+                            <h2>Сладко-кислая курица в собственном соку</h2>
+                            <p>
+                                Pepperoni, mozarella cheese and italian seasonings are
+                                rolled together, baked to delicious perfection, then cut
+                                into bite-sized delights. Your quests will beg for the
+                                recipe.
+                              </p>
+                        </div>
+                        <div class="menu-item1"><img src="./imges/5.jpeg" alt=""></div>
+                    <div class="menu-text">
+                        <h2>Осетр с шампаньенами</h2>
+                        <p>
+                            Pepperoni, mozarella cheese and italian seasonings are
+                            rolled together, baked to delicious perfection, then cut
+                            into bite-sized delights. Your quests will beg for the
+                            recipe.
+                          </p>
+                    </div>
+                    <div class="menu-item1"><img src="./imges/6.jpeg" alt=""></div>
+                    <div class="menu-text">
+                        <h2>Бургеры</h2>
+                        <p>
+                            Pepperoni, mozarella cheese and italian seasonings are
+                            rolled together, baked to delicious perfection, then cut
+                            into bite-sized delights. Your quests will beg for the
+                            recipe.
+                          </p>
+                    </div>
+                    </div>
+                </div>
+                <!--3-->
+                <div class="menu-item">
+                    <div class="menu-item2">
+                        <div class="menu-h1">
+                            <h4>Десерты</h4>
+                        </div>
+                        <div class="line"></div>
+                        <div class="menu-item1"><img src="./imges/7.jpeg" alt=""></div>
+                        <div class="menu-text">
+                            <h2>Кексы</h2>
+                            <p>
+                                Pepperoni, mozarella cheese and italian seasonings are
+                                rolled together, baked to delicious perfection, then cut
+                                into bite-sized delights. Your quests will beg for the
+                                recipe.
+                              </p>
+                        </div>
+                        <div class="menu-item1"><img src="./imges/8.jpeg" alt=""></div>
+                    <div class="menu-text">
+                        <h2>Пироженые</h2>
+                        <p>
+                            Pepperoni, mozarella cheese and italian seasonings are
+                            rolled together, baked to delicious perfection, then cut
+                            into bite-sized delights. Your quests will beg for the
+                            recipe.
+                          </p>
+                    </div>
+                    <div class="menu-item1"><img src="./imges/9.jpeg" alt=""></div>
+                    <div class="menu-text">
+                        <h2>Торты</h2>
+                        <p>
+                            Pepperoni, mozarella cheese and italian seasonings are
+                            rolled together, baked to delicious perfection, then cut
+                            into bite-sized delights. Your quests will beg for the
+                            recipe.
+                          </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+       </section>
+       <!--menu2-->
+       <div class="header-inner2">
+           <div class="header-text">
+               <div class="header-item">
+                   <div class="s1"></div>
+                   <img src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png" alt="">
+                   <div class="s2"></div>
+               </div>
+               <div class="header-item2">
+                   <h2 id="special">Последние Блюда</h2>
+               </div>
+               <div class="header-item">
+                <div class="s1"></div>
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png" alt="">
+                <div class="s2"></div>
+            </div>
+           </div>
+       </div>
+       <section class="menu2">
+        <div class="container">
+          <div class="menu2-inner">
+            <div class="menu2-item">
+              <div class="menu2-img">
+                <img src="./imges/10.jpeg" alt="" />
+              </div>
+              <div class="menu2-text">
+                <h2>Славянская кухня</h2>
+                <p>Традиционные и не очень блюда для вашего стола</p>
+              </div>
+            </div>
+  
+            <div class="menu2-item">
+              <div class="menu2-img">
+                <img src="./imges/11.jpeg" alt="" />
+              </div>
+              <div class="menu2-text">
+                <h2>Ягодно фруктовый баланс</h2>
+                <p>Традиционные и не очень блюда для вашего стола</p>
+              </div>
+            </div>
+  
+            <div class="menu2-item">
+              <div class="menu2-img">
+                <img src="./imges/12.jpeg" alt="" />
+              </div>
+              <div class="menu2-text">
+                <h2>Итальянская пицца</h2>
+                <p>Пицца итальянская бомба братан</p>
+              </div>
+            </div>
+  
+            <div class="menu2-item">
+              <div class="menu2-img">
+                <img src="./imges/13.jpeg" alt="" />
+              </div>
+              <div class="menu2-text">
+                <h2>Торты от наших кондитеров</h2>
+                <p>Торт бомба честно говоря</p>
+              </div>
+            </div>
+  
+            <div class="menu2-inner2"></div>
+          </div>
+  
+          <!-- menu2 glava  -->
+  
+          <div class="menu2-inner">
+            <div class="menu2-item">
+              <div class="menu2-img">
+                <img src="./imges/14.jpeg" alt="" />
+              </div>
+              <div class="menu2-text">
+                <h2>Vila de perlamutra</h2>
+                <p>Традиционные французкие кексы на рисовой муке</p>
+              </div>
+            </div>
+  
+            <div class="menu2-item">
+              <div class="menu2-img">
+                <img src="./imges/16.jpeg" alt="" />
+              </div>
+              <div class="menu2-text">
+                <h2>Кремовые десерты на заказ</h2>
+                <p>Все подобные десерты в приготовлении занимают от 12 до 48 часов</p>
+              </div>
+            </div>
+  
+            <div class="menu2-item">
+              <div class="menu2-img">
+                <img src="./imges/12.jpeg" alt="" />
+              </div>
+              <div class="menu2-text">
+                <h2>Brunch semiotics</h2>
+                <p>Десерт кайфовый</p>
+              </div>
+            </div>
+  
+            <div class="menu2-item">
+              <div class="menu2-img">
+                <img src="./imges/15.jpeg" alt="" />
+              </div>
+              <div class="menu2-text">
+                <h2>Вина из наших погребов</h2>
+                <p>Вино бомба сразу кумарит</p>
+              </div>
+            </div>
+  
+            <div class="menu2-inner2"></div>
+          </div>
+        </div>
+      </section>
+  
+      <div class="header-inner2">
+        <div class="header-text">
+          <div class="header-item">
+            <div class="s1"></div>
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png" alt="" />
+            <div class="s2"></div>
+          </div>
+          <div class="header-item2">
+            <h2><span>О</span> нас говорят</h2>
+          </div>
+          <div class="header-item">
+            <div class="s1"></div>
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png" alt="" />
+            <div class="s2"></div>
+          </div>
+        </div>
+      </div>
+  
+      <section class="review">
+        <div class="container">
+          <div class="review-inner">
+            <div class="review-item">
+              <div class="review-h1">
+                <h6>
+                  Отзывы о нас вы можете оставить в гостевой книге <br />
+                  Спросите о книги у работников зала
+                </h6>
+              </div>
+              <div class="review-text">
+                <p>
+                  <img src="./imges/IMG_9057-removebg-preview.png" alt="" /><span
+                    class="text"
+                    >Ресторан претендует на третью звезду Meshlenn, хотя
+                    заслуживает все пять. Рекомендую для встеч с инвесторами</span
+                  >
+                </p>
+                <div class="review-text2">
+                  <h3>—Николай</h3>
+                  <img src="./imges/star (2).png" alt="" />
+                  <img src="./imges/star (2).png" alt="" />
+                  <img src="./imges/star (2).png" alt="" />
+                  <img src="./imges/star (2).png" alt="" />
+                  <img src="./imges/star (2).png" alt="" />
+                </div>
+              </div>
+            </div>
+  
+            <div class="review-item">
+              <div class="review-text">
+                <p>
+                  <img src="./imges/IMG_9057-removebg-preview.png" alt="" /><span
+                    class="text"
+                    >Have you ever felt worried that your party will not raise up
+                    to your guest expectations? In design, vertical rhythms is the
+                    structure that guides a reader’s eye through the content. Good
+                    vertical rhythm makes a layout more balanced and beautiful and
+                    its content more readable. The time signature in sheet music
+                    visually depicts a song is rhythm, while for us, the lines of
+                    the baseline grid depict the rhythm of our content and give us
+                    guidelines.</span
+                  >
+                </p>
+                <div class="review-text2">
+                  <h3>—Марто Кай, ресторатор из Парижа</h3>
+                  <img src="./imges/star (2).png" alt="" />
+                  <img src="./imges/star (2).png" alt="" />
+                  <img src="./imges/star (2).png" alt="" />
+                  <img src="./imges/star (2).png" alt="" />
+                  <img src="./imges/star (2).png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <div class="header-inner2">
+        <div class="header-text">
+          <div class="header-item">
+            <div class="s1"></div>
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png" alt="" />
+            <div class="s2"></div>
+          </div>
+          <div class="header-item2">
+            <h2><span>С</span>вязаться с нами</h2>
+          </div>
+          <div class="header-item">
+            <div class="s1"></div>
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png" alt="" />
+            <div class="s2"></div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- coment -->
+  
+      <section class="comment">
+        <div class="container">
+          <div class="comment-inner">
+            <form action="#" name="new form" method="post"></form>
+            <div class="form-inputs">
+              <input type="text" placeholder="Ваше имя*">
+              <input type="text" placeholder="Ваш e-mail*">
+            </div>
+            <textarea name="text" placeholder="Сообшение" ></textarea>
+            <div class="button-block">
+              <input class="btn" type="submit" value="Отправить сообшение">
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <footer>
+        <div class="container">
+          <div class="footer-inner">
+            <div class="btn-top">
+              <a href="#"><img src="./imges/up-arrow.png" alt=""></a>
+            </div>
+            <div class="footer-icon">
+              <a href="#"><img src="./imges/premium-icon-twitter-3536464.png" alt=""></a>
+              <a href="#"><img src="imges/linkedin.png" alt=""></a>
+              <a href="#"><img src="imges/premium-icon-facebook-3536423.png" alt=""></a>
+              <a href="#"><img src="imges/vk-reproductor.png" alt=""></a>
+              <a href="#"><img src="imges/youtube.png" alt=""></a>
+              
+            </div>
+            <div class="footer-text">
+              <h3>@COPYRIGHT</h3>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </header>
+  </body>
+</html>
